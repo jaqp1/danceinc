@@ -28,9 +28,32 @@ function NavBar() {
 
   }, []);
 
-  const onUpdateActiveLink = () => {
+  const onUpdateActiveLink = (value) => {
     setActiveLink(value);
   }
+
+  const handleScroll = () => {
+    const sections = document.querySelectorAll("Nav.Link");
+    let currentSection = null;
+
+
+    sections.forEach((section) => {
+      const rect = section.getBoundingClientRect();
+      if (rect.top >= 0 && rect.top <= window.innerHeight / 2) {
+        currentSection = section.id;
+      }
+    });
+
+    setActiveLink(currentSection);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
@@ -46,8 +69,8 @@ function NavBar() {
             <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => {
               onUpdateActiveLink('home')
             }}>Home</Nav.Link>
-            <Nav.Link href="#stands" className={activeLink === 'stands' ? 'active navbar-link' : 'navbar-link'} onClick={() => {
-              onUpdateActiveLink('stands')
+            <Nav.Link href="#oferta" className={activeLink === 'oferta' ? 'active navbar-link' : 'navbar-link'} onClick={() => {
+              onUpdateActiveLink('oferta')
             }}>Stands</Nav.Link>
             <Nav.Link href="#realizacje" className={activeLink === 'realizacje' ? 'active navbar-link' : 'navbar-link'} onClick={() => {
               onUpdateActiveLink('realizacje')

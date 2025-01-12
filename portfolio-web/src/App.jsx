@@ -5,6 +5,7 @@ import './App.css'
 import NavBar from './components/NavBar'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Banner  from './components/Banner';
+import Oferta from './components/Oferta';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <>
       <NavBar></NavBar>
       <Banner></Banner>
+      <Oferta></Oferta>
     </>
   )
 }

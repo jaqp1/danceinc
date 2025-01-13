@@ -1,6 +1,8 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import { useState, useEffect } from "react";
 import logo from '../assets/logo.png';
 import navIcon1 from '../assets/nav-icon1.svg';
@@ -56,6 +58,7 @@ function NavBar() {
   }, []);
   
   return (
+    <Router>
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
@@ -72,8 +75,8 @@ function NavBar() {
             <Nav.Link href="#oferta" className={activeLink === 'oferta' ? 'active navbar-link' : 'navbar-link'} onClick={() => {
               onUpdateActiveLink('oferta')
             }}>Stands</Nav.Link>
-            <Nav.Link href="#realizacje" className={activeLink === 'realizacje' ? 'active navbar-link' : 'navbar-link'} onClick={() => {
-              onUpdateActiveLink('realizacje')
+            <Nav.Link href="#realizacja" className={activeLink === 'realizacja' ? 'active navbar-link' : 'navbar-link'} onClick={() => {
+              onUpdateActiveLink('realizacja')
             }}>Realizacje</Nav.Link>
           </Nav>
           <span className="navbar-text">
@@ -82,11 +85,14 @@ function NavBar() {
               <a href="#"><img src={navIcon2} alt=""></img></a>
               <a href="#"><img src={navIcon3} alt=""></img></a>
             </div>
-            <button className="vvd" onClick={() => console.log('connect')}><span>Skontaktuj się z nami!</span></button> 
+            <HashLink to='#connect'>
+            <button className="vvd" href="#connect" ><span>Skontaktuj się z nami!</span></button> 
+            </HashLink>
           </span>
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    </Router>
   );
 }
 

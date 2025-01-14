@@ -2,6 +2,8 @@ import React from 'react';
 import stand1 from '../assets/stand1.jpg';
 import { Container, Row, Col, Tab, Nav } from 'react-bootstrap';
 import Card from './Card.jsx';
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 
 export default function Realizacje() {
 
@@ -39,12 +41,16 @@ export default function Realizacje() {
       ];
 
   return (
-    <section className="realizacja" id="realizacja">
+    <TrackVisibility>
+    {({ isVisible }) =>
+    <section className={isVisible ? "animate__animated animate__fadeIn realizacja" : "animate__animated animate__fadeOut realizacja"} id="realizacja">
         <Container>
             <Row>
                 <Col>
-                <h2>Realizacje</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h2>Realizacje</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    
+               
                     <Tab.Container id="realizations-tabs" defaultActiveKey="first">
                         <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                             <Nav.Item>
@@ -78,6 +84,7 @@ export default function Realizacje() {
                 </Col>
             </Row>
         </Container>
-    </section>
+    </section>}
+    </TrackVisibility>
   )
 }

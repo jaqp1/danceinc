@@ -543,3 +543,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 100%;
   position: absolute; 
 }
+/* Footer */
+.footer{
+  padding: 0 0 20px 0;
+  background-color: #121212;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  left: 15%;
+  width: 100%;
+}
+.footer img{
+  width: 20%;
+}
+.footer p{
+  font-weight: 400;
+  font-size: 14px;
+  color: #B8B8B8;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+}

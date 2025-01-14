@@ -8,6 +8,7 @@ import Banner  from './components/Banner';
 import Oferta from './components/Oferta';
 import Realizacje from './components/Realizacje';
 import Contact from './components/Contact.jsx';
+import Footer from './components/Footer.jsx';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Oferta></Oferta>
       <Realizacje></Realizacje>
       <Contact></Contact>
+      <Footer></Footer>
     </>
   )
 }

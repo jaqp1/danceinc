@@ -5,9 +5,10 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import { useState, useEffect } from "react";
 import logo from '../assets/logo.png';
-import navIcon1 from '../assets/nav-icon1.svg';
+import navIcon1 from '../assets/tiktok_white.svg';
 import navIcon2 from '../assets/nav-icon2.svg';
 import navIcon3 from '../assets/nav-icon3.svg';
+
 
 function NavBar() {
 
@@ -81,9 +82,9 @@ function NavBar() {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#"><img src={navIcon1} alt=""></img></a>
-              <a href="#"><img src={navIcon2} alt=""></img></a>
-              <a href="#"><img src={navIcon3} alt=""></img></a>
+              <a href="https://www.tiktok.com/@dance_inc.dj?_t=ZN-8tCxmwz5kMY&_r=1"><img src={navIcon1} alt=""></img></a>
+              <a href="https://www.facebook.com/dance.incdj"><img src={navIcon2} alt=""></img></a>
+              <a href="https://www.instagram.com/dance_inc.dj"><img src={navIcon3} alt=""></img></a>
             </div>
             <HashLink to='#connect'>
             <button className="vvd" href="#connect" ><span>Skontaktuj się z nami!</span></button> 

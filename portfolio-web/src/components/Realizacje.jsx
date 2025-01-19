@@ -41,11 +41,14 @@ export default function Realizacje() {
       ];
 
   return (
-    <TrackVisibility>
-    {({ isVisible }) =>
-    <section className={isVisible ? "animate__animated animate__fadeIn realizacja" : "animate__animated animate__fadeOut realizacja"} id="realizacja">
-        <Container>
-            <Row>
+    
+   
+    <section className="realizacja" id="realizacja">
+    
+        <Container  >
+        <TrackVisibility offset={700}>
+        {({ isVisible }) =>
+            <Row className={isVisible ? "animate__animated animate__fadeIn" : "animate__animated animate__fadeOut"}>
                 <Col>
                     <h2>Realizacje</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -82,9 +85,10 @@ export default function Realizacje() {
                         </Tab.Content>
                     </Tab.Container>
                 </Col>
-            </Row>
+            </Row>}
+             </TrackVisibility>
         </Container>
-    </section>}
-    </TrackVisibility>
+       
+    </section>
   )
 }

@@ -49,7 +49,7 @@ export default function Banner() {
         <Container>
             <TrackVisibility offset={200}>
                 {({ isVisible }) =>
-                <Row className={isVisible ? "animate__animated animate__fadeIn align-items-center" : "animate__animated animate__fadeOut align-items-center"}>
+                <Row className={isVisible ? "animate__animated animate__fadeIn align-items-center" : "animate__animated animate__fadeIN align-items-center"}>
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Welcome to our portfolio</span>
                         <h1>{'Cześć, jesteśmy Dance Inc. '}<span className="wrap">{text}</span></h1>

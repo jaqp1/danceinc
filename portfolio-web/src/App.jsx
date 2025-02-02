@@ -21,7 +21,7 @@ function App() {
       <Oferta></Oferta>
       <Realizacje></Realizacje>
       <Contact></Contact>
-      <Footer></Footer>
+      <Footer></Footer> 
     </>
   )
 }

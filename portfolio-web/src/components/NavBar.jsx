@@ -75,7 +75,7 @@ function NavBar() {
             }}>Home</Nav.Link>
             <Nav.Link href="#oferta" className={activeLink === 'oferta' ? 'active navbar-link' : 'navbar-link'} onClick={() => {
               onUpdateActiveLink('oferta')
-            }}>Stands</Nav.Link>
+            }}>Standy</Nav.Link>
             <Nav.Link href="#realizacja" className={activeLink === 'realizacja' ? 'active navbar-link' : 'navbar-link'} onClick={() => {
               onUpdateActiveLink('realizacja')
             }}>Realizacje</Nav.Link>

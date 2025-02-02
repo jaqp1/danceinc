@@ -27,6 +27,7 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
 }
+
 body{
   font-weight: 400;
   overflow-x: hidden;
@@ -37,6 +38,8 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-width: 320px; 
+  min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -381,6 +384,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: transparent;
   background-color: #151515;
   border-radius: 64px;
+  width: 80%; 
+  margin: 0 auto; 
 }
 .realizacja h2 {
 	font-size: 45px;

@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import contactImg from '../assets/contact-img.svg'
 import {Container, Row, Col} from 'react-bootstrap';
-import Swal from 'sweetalert2';
+import Swal from  'sweetalert2/dist/sweetalert2.js';
 
 export default function Contact() {
 

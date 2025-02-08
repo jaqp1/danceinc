@@ -355,6 +355,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 0 0 50px 0;
   margin: 0 9% 0 9%;
 }
+
 .oferta-bx{
   background-color: #151515;
   border-radius: 64px;
@@ -365,6 +366,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .oferta h2{
   font-size: 40px;
   font-weight: 700;
+}
+@media (max-width: 576px) {
+  .oferta {
+    padding: 0 0 20px 0;
+    margin: 0 5% 0 5%;
+  }
+  .oferta-bx{
+    background-color: #121212;
+    border-radius: 64px;
+    text-align: center;
+    padding: 30px 25px;
+    margin-top: -60px;
+  }
+  .oferta h2{
+    font-size: 40px;
+    font-weight: 700;
+    background-color: #151515;
+    border-radius: 64px;
+  }
 }
 .oferta p{
   color: #B8B8B8;
@@ -400,7 +420,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
 }
 
-@media (min-width: px) {
+@media (min-width: 500px) {
   .realizacja h2 {
     font-size: 4vw;
     font-weight: 700;

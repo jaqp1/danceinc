@@ -100,6 +100,7 @@ nav.navbar {
   top: 0;
   z-index: 9999;
   transition: 0.32 ease-in-out;
+  background-color: #121212;
 }
 
 nav.navbar.scrolled { 
@@ -186,6 +187,11 @@ span.navbar-text {
   background-color: transparent;
   transition: 0.3s ease-in-out;
 }
+@media (max-width: 576px) {
+  .navbar-text button {
+    font-size: 12px;
+  }
+}
 .navbar-text button::before { 
   content: "";
   width: 0%;
@@ -210,6 +216,7 @@ nav.navbar .navbar-toggler:active,
 nav.navbar .navbar-toggler:focus{
   outline: none;
   box-shadow: none;
+
 }
 nav.navbar .navbar-toggler-icon {
   width: 24px;
@@ -250,6 +257,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-color: transparent;
+}
+nav.navbar .me-auto{
+  margin-top: 3%;
 }
 
 /* Banner */
@@ -313,7 +323,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 60px;
   letter-spacing: 0.8px;
   display: flex;
-  align-items: cneter;
+  align-items: center;
+  margin-left: 2%;
 }
 .banner button svg {
   font-size: 25px;
@@ -347,7 +358,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
-
+@media (max-width: 576px) {
+  .banner p{
+    color: #B8B8B8;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    width: 96%;
+    margin-left: 2%;
+  }
+  .banner h1{
+    margin-left: 2%;
+  }
+  .banner .tagline{
+    margin-left: 2%;
+  }
+  .banner{
+    margin-top: 15%;
+  }
+}
 
 
 /* Oferta */
@@ -696,4 +725,26 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+footer .logo{
+  width: 0;
+}
+@media (max-width: 576px) { 
+  .footer{
+    padding: 0 0 20px 0;
+    background-color: #121212;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .footer .logo{
+    width: 20%;
+  }
+  .footer img{
+    width:0;
+  }
 }

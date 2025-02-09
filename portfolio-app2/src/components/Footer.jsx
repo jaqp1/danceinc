@@ -19,6 +19,7 @@ export default function Footer() {
                 </Col>
                 <Col sm={6} className="text-center text-sm-end">
                     <div className="social-icon">
+                        <img className="logo" src={logo} alt="Logo"></img>
                         <a href="https://www.tiktok.com/@dance_inc.dj?_t=ZN-8tCxmwz5kMY&_r=1"><img src={navIcon1}></img></a>
                         <a href="https://www.facebook.com/dance.incdj"><img src={navIcon2}></img></a>
                         <a href="https://www.instagram.com/dance_inc.dj/"><img src={navIcon3}></img></a>

@@ -190,6 +190,7 @@ span.navbar-text {
 @media (max-width: 576px) {
   .navbar-text button {
     font-size: 12px;
+    padding: 16px 20px;
   }
 }
 .navbar-text button::before { 

@@ -394,7 +394,7 @@ nav.navbar .me-auto{
   margin-top: -60px;
 }
 .oferta h2{
-  font-size: 40px;
+  font-size: clamp(40px, 4vw, 40px);
   font-weight: 700;
 }
 .oferta p{
@@ -464,7 +464,7 @@ nav.navbar .me-auto{
   align-items: center;
 }
 .realizacja h2 {
-  font-size: 6vw;
+  font-size: 4vw;
   font-weight: 700;
   text-align: center;
 }
@@ -479,15 +479,16 @@ nav.navbar .me-auto{
 
 @media (min-width: 1024px) {
   .realizacja h2 {
-    font-size: 4vw;
+    font-size: 40px;
     font-weight: 700;
     text-align: center;
+    margin-top:-8%
   }
 }
 
 .realizacja p {
   color: #B8B8B8;
-  font-size: clamp(14px, 1.5vw, 20px);
+  font-size: clamp(14px, 1.5vw, 18px);
   letter-spacing: 0.8px;
   line-height: 1.5em;
   margin: 14px auto 30px auto;

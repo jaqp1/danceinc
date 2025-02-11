@@ -292,7 +292,7 @@ nav.navbar .me-auto{
   }
   .banner {
     margin-top: 5%;
-    margin-bottom: 15%;
+    margin-bottom: 30%;
     padding: 13% 0 10% 0;
     height: 100vh;
   
@@ -379,7 +379,6 @@ nav.navbar .me-auto{
   }
 }
 
-
 /* Oferta */
 .oferta{
   padding: 0 0 50px 0;
@@ -391,7 +390,7 @@ nav.navbar .me-auto{
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
-  margin-top: -60px;
+  margin-top: 50px;
 }
 .oferta h2{
   font-size: clamp(40px, 4vw, 40px);
@@ -448,6 +447,11 @@ nav.navbar .me-auto{
     margin: 0 auto 15px auto;
     border-radius: 10px;
   }
+}
+@media (min-width: 1200px) { 
+  .oferta-bx{
+    margin-top: -60px;
+  }    
 }
 
 

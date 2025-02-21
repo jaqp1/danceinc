@@ -2,7 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/header-img.png";
+import headerImg from "../assets/header-img1.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import Contact from './Contact';
